@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bmi Calculator</title>
+    <link rel="stylesheet" href="./assets/style/style.css" />
+  </head>
+  <body>
+    <!-- Flower bg right -->
+    <div>
+      <img
+        src="./assets/img/flower.webp"
+        alt="flower_right"
+        id="flower_right"
+      />
+    </div>
+
+    <!-- Logo -->
+    <div class="logo">
+      <img src="./assets/img/Bmi logo.webp" alt="logo" class="logo_img" />
+    </div>
+
+    <!-- BMI Calculator -->
+    <div id="bmicontainer">
+      <form method="" name="bmi" id="bmi_form" onsubmit="calculateBmi()">
+        <!-- Input type for weight -->
+        <div class="form-gp">
+          <label for="lblweight" class="labels">WEIGHT (KG)</label>
+          <input
+            id="weight"
+            type="number"
+            name="weight"
+            min="25"
+            max="730"
+            step=".1"
+            required
+          />
+        </div>
+        <!-- Input type for height -->
+        <div class="form-gp">
+          <label for="lblheight" class="labels">HEIGHT (CM)</label>
+          <input
+            id="height"
+            type="number"
+            name="height"
+            min="22"
+            max="275"
+            step=".1"
+            required
+          />
+        </div>
+
+        <!-- Button calculate -->
+        <button name="button" id="btnCalculate">CALCULATE</button>
+
+        <!-- Result -->
+        <div class="result">
+          <p id="output1"></p>
+        </div>
+      </form>
+    </div>
+
+    <!-- Flower bg left -->
+    <div id="bottom_flower">
+      <img src="./assets/img/flower.webp" alt="flower_left" id="flower_left" />
+    </div>
+
+    <!-- js Script -->
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
